@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(9, 13, 15);
+    font-family: sans-serif;
+}
+.logo{
+    color: orangered;
+    font-size: 35px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 0rem 9%;
+   background: rgba(0, 0, 0, 0.7);
+   filter: drop-shadow(10px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+   width: 100%;
+   height: 80px;
+}
+.navbar{
+    display: flex;
+    gap: 25px;
+}
+.navbar li{
+    list-style: none;
+   
+}
+.navbar li  a{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+   text-decoration: none;
+
+}
+
+.navbar a.active{
+    color: orangered;
+    border-bottom: 4px solid orangered;
+}
+.navbar a:hover{
+  border-bottom: 4px solid orangered;
+  border-bottom-width: 3px;
+ 
+}
+.contant{
+    display: flex;
+    color: white;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.contant img{
+    margin-top: 80px;
+    width: 200px;
+    height: 205px;
+    border-radius: 50%;
+    box-shadow: 0 0  20px orangered;  
+    background-color: orangered;
+    border: 5px solid saddlebrown;
+    padding-right: 20px;
+}
+ .contant-text{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 700px;
+}
+.contant .contant-text h1{
+    font-size: 40px;
+    font-weight: bold;
+   
+
+
+}
+.contant .contant-text h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+
+
+}
+.contant .contant-text p{
+    font-size: 17px;
+    font-weight: 200;
+
+
+
+}
+
+.contant .contant-text h1 span{
+    color: orangered;
+
+}
+.contant .contant-text h2 span{
+   
+    color: orangered;
+}
+.social-btn{
+    margin-left: 280px;
+}
+.social-btn i{
+ 
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   width: 36px;
+   height: 36px;
+   background: transparent;
+   border:2px solid orangered;
+   font-size: 20px;
+   border-radius: 50%;
+   color: orangered;
+   margin: 7px;
+  padding-left: 6px;
+  padding-top: 6px;
+  margin-top: 30px;
+   
+
+  
+ 
+}
+.social-btn i:hover{
+    color: black;
+    background-color: orangered;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px orangered;
+}
+.social-btn button{
+    background: transparent;
+    border: 4px solid orangered;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px orangered;
+}
+.social-btn button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+#typing-animation {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) infinite;
+  }
+  
+  #typing-animation:before {
+    content: "";
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+    animation: typing-cursor 0.5s ease-in-out infinite;
+  }
+
+  /* detail page*/
+ 
+.skill{
+    border-radius: 12px;
+    width: 400px;
+    margin-left: 350px;
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    list-style: none;
+    color: white;
+    box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+.skill li{
+    margin: 20px;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:   0 1px 3px rgba(0, 0, 0, 0.12) 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+.bar:hover{
+    box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 10px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 1)100%);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+
+}
+.css{
+    width: 85%;
+    animation: css 3s;
+
+}
+.js{
+    width: 40%;
+    animation: js 3s;
+}
+.python{
+    width: 30%;
+    animation: python 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+
+.about-img{
+    display: flex;
+}
+.about{
+    margin-top: 100px;
+
+}
+.about h3{
+   margin-left: 350px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px
+}
+.about h3 span{
+    color: orangered;
+}
+.about-img img{
+    width: 200px;
+    height: 205px;
+    border-radius: 50%;
+    box-shadow: 0 0  20px orangered;  
+    background-color: orangered;
+    border: 5px solid saddlebrown;
+    padding-right: 20px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.aboutpage{
+    margin-left: 100px;
+    color: white;
+    margin-top: 80px;
+}
+
+
+/*resume page*/
+#resume{
+    margin-top: 150px;
+
+}
+#resume h5{
+  margin-left: 350px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.timeline-area{
+    margin-top: 50px;
+    width: 400px;
+    border-left:  3px solid orangered;
+    color: white;
+    padding: 0 20px 0 30px;
+    margin-left: 30%;
+}
+.timeline-area h1{
+    color: orangered;
+}
+
+ .box{
+    background-color: #1d1919;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid #404742;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px black;
+    border-radius: 8px;
+
+}
+ .timeline-area .box::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orangered;
+    border: 3px solid #3c18b3;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+.box h1{
+    color: orangered;
+}
+/*-------contact page*/
+.contact{
+    margin-top: 100px;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+}
+.contact h2 span{
+    color: orangered;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input-box{
+    width: 500px;
+   margin-left: 400px;
+   border: 1px solid  rgb(9, 13, 15);;
+  
+}
+.contact form .input-box input, 
+.contact form textarea{
+    width: 500px;
+    padding: 15px;
+    font-size: 1.6rem;
+    color: white;
+    background: black;
+    border-radius: 0.8rem;
+    border: 1px solid orangered;
+    resize: none;
+  
+}
+textarea{
+    margin-left: 180px;
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
+.textbox{
+    text-align: center;
+    color: white;
+
+}
+.textbox input{
+    color: white;
+    background: black;
+    border: 2px solid orangered;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px orangered;
+}
+.textbox input:hover{
+    background: orangered;
+ 
+}
+
+
+
+
+
+
+/*--------------*/
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: orangered;
+    color: white;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}.footer.social{
+    font-size: 25px;
+    color: black;
+    border: 2px solid black;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-5px);
+    background: black;
+    color: white;
+}
+.list{
+   
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+.footer ul li a{
+    color: black;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+    float: left;
+
+
+}
+footer ul li a:hover{
+    border-bottom: 3px solid black;
+
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
